@@ -6,13 +6,29 @@ window.onload = function() {
 		top_left_wall.setAttribute("youlose");
 	}
 	
-	var all_boundaries = document.querySelectorAll(".boundary");
+	
+	
+	var all_boundaries = document.querySelectorAll("div#maze div.boundary");
 	for (var i = 0; i < all_boundaries.length; i++) {
 		all_boundaries[i].onmouseover = function() {
 			all_boundaries[i].setAttribute("youlose");
 		}
 	}
 
+	
+	
+	var end = document.getElementById("end");
+	end.onmouseover = function() {
+		alert("You win!");
+	}
+	
+		
+	
+	
+	
+	
+	
+}
 	
 	
 	
