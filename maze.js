@@ -22,6 +22,16 @@ window.onload = function() {
 		alert("You win!");
 	}
 	
+	
+	
+	var start = document.getElementById{"start");
+	start.onclick = function() {
+		var all_boundaries = document.querySelectorAll("div#maze div.boundary");
+		for (var i = 0; i < all_boundaries.length; i++) {
+			all_boundaries[i].classList.remove("youlose");
+		}
+	}
+		
 		
 	
 	
@@ -29,8 +39,3 @@ window.onload = function() {
 	
 	
 }
-	
-	
-	
-	
-	
