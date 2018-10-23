@@ -12,6 +12,7 @@ window.onload = function() {
 	for (var i = 0; i < all_boundaries.length; i++) {
 		all_boundaries[i].onmouseover = function() {
 			all_boundaries[i].setAttribute("youlose");
+			document.getElementById("status").innerHTML = "You lose"!;
 		}
 	}
 
@@ -19,7 +20,7 @@ window.onload = function() {
 	
 	var end = document.getElementById("end");
 	end.onmouseover = function() {
-		alert("You win!");
+		document.getElementById("status").innerHTML = "You win!";
 	}
 	
 	
