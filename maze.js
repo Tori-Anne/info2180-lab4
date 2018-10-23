@@ -32,11 +32,17 @@ window.onload = function() {
 			all_boundaries[i].classList.remove("youlose");
 		}
 	}
+	
+	
+	
+	var cheat = document.getElementById{"start");
+	cheat.onmouseleave = function() {
+		for (var i = 0; i < all_boundaries.length; i++) {
+			all_boundaries[i].setAttribute("youlose");
+			document.getElementById("status").innerHTML = "You win!";
+		}
+	}
 		
-		
-	
-	
-	
 	
 	
 }
